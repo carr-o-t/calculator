@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="calc__container">
+            <div class="calc__header">
+                <div class="calc__header__ops">
+                    <div data-prev-operand class="calc__header__prev"></div>
+                    <div data-curr-operand class="calc__header__curr"></div>
+                </div>
+                <svg data-history class="history-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-clock"
+                    viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                </svg>
+            </div>
+            <div class="calc__grid">
+                <div data-historyList class="history-list">
+                    <ul data-ul>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button data-clear class="calc__btn clear">C</button>
+                    <button data-delete class="calc__btn delete">DL</button>
+                    <button data-operation class="calc__btn divide">/</button>
+                    <button data-number class="calc__btn seven">7</button>
+                    <button data-number class="calc__btn eight">8</button>
+                    <button data-number class="calc__btn nine">9</button>
+                    <button data-operation class="calc__btn multiply">x</button>
+                    <button data-number class="calc__btn four">4</button>
+                    <button data-number class="calc__btn five">5</button>
+                    <button data-number class="calc__btn six">6</button>
+                    <button data-operation class="calc__btn minus">-</button>
+                    <button data-number class="calc__btn one">1</button>
+                    <button data-number class="calc__btn two">2</button>
+                    <button data-number class="calc__btn three">3</button>
+                    <button data-operation class="calc__btn plus">+</button>
+                    <button data-operation class="calc__btn exponent">^</button>
+                    <button data-number class="calc__btn zero">0</button>
+                    <button data-number class="calc__btn decimal">.</button>
+                    <button data-equals class="calc__btn equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
